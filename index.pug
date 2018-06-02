@@ -1,0 +1,136 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible" content="ie=edge")
+    title Full Human
+    meta(name="description" content="Full Human is an opensource organization. It is the home of tools and software to help developers be more productive and create better websites.")
+    link(rel="canonical" href="https://fullhuman.org")
+    link(rel="stylesheet" href="./tailwindcss.css")
+    link(rel="stylesheet" href="./src/index.styl")
+
+    link(rel="apple-touch-icon" sizes="180x180" href="./src/favicon/apple-touch-icon.png")
+    link(rel="icon" type="image/png" sizes="32x32" href="./src/favicon/favicon-32x32.png")
+    link(rel="icon" type="image/png" sizes="16x16" href="./src/favicon/favicon-16x16.png")
+    link(rel="manifest" href="./src/favicon/site.webmanifest")
+    link(rel="mask-icon" href="./src/favicon/safari-pinned-tab.svg" color="#000000")
+    meta(name="msapplication-TileColor" content="#000000")
+    meta(name="theme-color" content="#ffffff")
+
+    meta(property="og:image:height" content="521")
+    meta(property="og:image:width" content="995")
+    meta(property="og:description" content="Full Human is an opensource organization. It is the home of tools and software to help developers be more productive and create better websites.")
+    meta(property="og:title" content="Full Human")
+    meta(property="og:url" content="https://fullhuman.org")
+    meta(property="og:image" content="https://fullhuman.org/opengraph/og-image.jpg")
+  
+  body.font-sans.overflow-hidden
+
+    section.bg-black.flex.items-center.justify-center.introduction
+      span.inline.select-none
+        .we-are()
+        .cursor |
+    
+    section.relative.logo-fullscreen#particles-js
+      .logo-container.absolute.pin.flex.items-center.justify-center
+        img.logo(src="./src/images/fullhuman-logo.svg" alt="full-human" draggable="false").pointer-events-none
+
+    section.bg-black.text-white
+      .the-definition.container.mx-auto.min-h-screen.px-4.py-8
+        h3.mt-8.text-4xl.uppercase The definition
+        .flex
+          p.mt-8.text-2xl.leading-normal(class="sm:w-1/2")
+            | Full Human is an organization providing tools and librairies to 
+            | help developers. Some of those projects improve the process of 
+            | developing websites and applications. Full Human has another 
+            | mission. It is to invite people to be proud of themselves 
+            | regardless of their differences. They might not fit the norm 
+            | but they are human, we all are. 
+            a(href="https://medium.com/full-human/full-human-2f5ab489a603").text-green-light Learn more
+    
+    section.container.mx-auto.min-h-screen.px-4.py-4
+      h3.mt-8.text-4xl.uppercase.text-right The projects
+      div
+        .max-wd-md.w-full.shadow.mt-8(class="lg:flex ml-auto lg:w-2/3")
+          div(class="h-48 lg:h-auto lg:w-48 flex-none flex bg-grey-light px-2 items-center justify-center rounded-t lg:rounded-t-none lg:rounded-l overflow-hidden"
+          )
+            img.object-contain.w-32(src="./src/images/purgecss-logo.svg" alt="logo of purgecss" draggable="false")
+          div(class="bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal")
+            .mb-8
+              p(class="text-sm text-grey-dark flex items-center") Web development
+              div(class="text-black font-bold text-xl mb-2") Purgecss
+              p(class="text-grey-darker text-base")
+                | When you are building a website with a css framework like Bootstrap, 
+                | you will only use a part of the framework and unused css styles will 
+                | be included. Purgecss removes unused selectors from your css, 
+                | resulting in smaller files. 
+            .flex.items-center
+              a(href="https://github.com/FullHuman/purgecss" target="_blank" rel="noopener")
+                img(class="w-10 h-10 mr-4"
+                src="./src/images/Github.svg"
+                alt="Github logo"
+                draggable="false")
+              a(href="https://www.npmjs.com/package/purgecss" target="_blank" rel="noopener")
+                img(class="w-10 h10 mr-4"
+                src="./src/images/npm.svg"
+                alt="npm logo"
+                draggable="false"
+                )
+              .text-sm
+                p.text-black.leading-none#purgecss-stargazers
+                p.text-grey-dark#purgecss-downloads
+
+        .max-wd-md.w-full.shadow.mt-8(class="lg:flex ml-auto lg:w-2/3")
+          div(class="h-48 lg:h-auto lg:w-48 flex-none flex bg-grey-light px-2 items-center justify-center rounded-t lg:rounded-t-none lg:rounded-l overflow-hidden"
+          )
+            p.text-2xl.uppercase.text-black Coming soon
+          div(class="bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal")
+            .mb-8
+              p(class="text-sm text-grey-dark flex items-center") Web development
+              div(class="text-black font-bold text-xl mb-2") Animate Emotion
+              p(class="text-grey-darker text-base")
+                | Based on Animate.css, Animate Emotion is a collection of react components
+                | to use animation with ease. It is built using Emotion, the css-in-js library.
+                | 
+            .flex.items-center
+              img(class="w-10 h-10 mr-4"
+              src="./src/images/Github.svg"
+              alt="Github logo")
+              img(class="w-10 h10 mr-4"
+              src="./src/images/npm.svg"
+              alt="npm logo"
+              )
+
+    section.bg-black
+      .min-h-screen.container.mx-auto.px-4.py-4.flex.justify-center.items-center
+        a.bg-white.px-4.py-4.rounded-full.mx-4(
+          href="https://github.com/FullHuman"
+          target="_blank"
+          rel="noopener"
+        )
+          img.rounded-full.w-48.shadow-lg(
+            src="./src/images/Github.svg"
+            alt="Github logo"
+          )
+        a.bg-white.px-4.py-4.rounded-full.mx-4(
+          href="https://twitter.com/Full_Human_"
+          target="_blank"
+          rel="noopener"
+        )
+          img.rounded-full.w-48.shadow-lg(
+            src="./src/images/twitter-mod.svg"
+            alt="Twitter logo"
+          )
+        a.bg-white.px-4.py-4.rounded-full.mx-4(
+          href="https://medium.com/full-human"
+          target="_blank"
+          rel="noopener"
+        )
+          img.rounded-full.w-48.shadow-lg(
+            src="./src/images/medium-mod.svg"
+            alt="Medium logo"
+          )
+
+    script(src="./src/lib/particles.min.js")
+    script(src="./src/index.js")
