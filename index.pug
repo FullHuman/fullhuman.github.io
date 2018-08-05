@@ -134,3 +134,23 @@ html(lang="en")
 
     script(src="./src/lib/particles.min.js")
     script(src="./src/index.js")
+
+    script(type="application/ld+json").
+      {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "url": "https://fullhuman.org",
+        "logo": "https://fullhuman.org/fullhuman.png",
+        "sameAs": [
+          "https://www.facebook.com/fullhuman.org/",
+          "https://www.instagram.com/fullhuman_/",
+          "https://www.linkedin.com/company/full-human/",
+          "https://plus.google.com/b/106032638399592401671/106032638399592401671"
+        ],
+        "founder": {
+          "@context": "http://schema.org",
+          "@type": "Person",
+          "givenName": "Floriel",
+          "familyName": "Fedry"
+        }
+      }
